@@ -29,7 +29,10 @@ PRODUCT_COPY_FILES += \
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Due to multi-density builds, these are set by init
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model ro.sf.lcd_density
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
@@ -60,9 +63,16 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     libmm-qcamera
 
-# CMHW JNI
-PRODUCT_PACKAGES += \
-    libjni_cmhw
+# Charger
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.usb.id.charge=F006 \
+    ro.usb.id.mtp=F003 \
+    ro.usb.id.mtp_adb=9039 \
+    ro.usb.id.ptp=904D \
+    ro.usb.id.ptp_adb=904E \
+    ro.usb.id.ums=F000 \
+    ro.usb.id.ums_adb=9015 \
+    ro.usb.vid=05c6
 
 # GPS
 PRODUCT_PACKAGES += \

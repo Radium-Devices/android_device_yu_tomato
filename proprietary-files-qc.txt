@@ -110,7 +110,6 @@ etc/firmware/cpp_firmware_v1_4_0.fw
 # DRM
 bin/qseecomd
 lib/libdrmdecrypt.so
-vendor/lib64/drm/libdrmwvmplugin.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libQSEEComAPI.so
@@ -119,6 +118,7 @@ vendor/lib64/libssd.so
 vendor/lib/libwvdrm_L3.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
+vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # GPS
@@ -168,7 +168,6 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
-vendor/lib64/libsc-a2xx.so
 vendor/lib64/libsc-a3xx.so
 vendor/lib64/libscale.so
 vendor/lib/egl/eglsubAndroid.so
@@ -186,7 +185,6 @@ vendor/lib/libOpenCL.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
-vendor/lib/libsc-a2xx.so
 vendor/lib/libsc-a3xx.so
 vendor/lib/libscale.so
 
@@ -197,7 +195,6 @@ etc/firmware/a420_pm4.fw
 # Media
 vendor/lib/libDivxDrm.so
 vendor/lib/libExtendedExtractor.so
--vendor/lib/libHevcSwDecoder.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmmosal.so
 vendor/lib/libmmparser.so
