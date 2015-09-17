@@ -25,6 +25,8 @@ TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_tomato-64_defconfig
 
+KBUILD_BUILD_USER := pranav01
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
